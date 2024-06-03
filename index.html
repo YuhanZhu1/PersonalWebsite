@@ -3,136 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuhan Zhu's Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f9;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            width: 100%;
-            text-align: center;
-        }
-
-        main {
-            padding: 20px;
-            max-width: 800px;
-            width: 100%;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        .profile-pic {
-            width: 100%;
-            max-width: 300px;
-            margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #f1f1f1;
-            padding: 10px;
-            width: 100%;
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+    <title>Yuhan Zhu's Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Yuhan Zhu's Resume</h1>
-        <p>Email: zhuyuha3@msu.edu | Phone: 517-802-0375</p>
-        <p>GitHub: <a href="https://github.com/YuhanZhu1" target="_blank">YuhanZhu1</a></p>
-        <p>Address: 1270 Garden City Rd. Apt205, East Lansing, MI 48823</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('bio')">Bio</a></li>
+                <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+                <li><a href="#" onclick="showPage('experiments')">Experiments</a></li>
+                <li><a href="#" onclick="showPage('photos')">Photos</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <img src="images/IMG_1950.JPG" alt="Yuhan Zhu" class="profile-pic">
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>Michigan State University, East Lansing, MI, U.S</strong> (09/2022 – 05/2024)</p>
+        <section id="home">
+            <img src="images/IMG_0729.JPG" alt="Yuhan Zhu" class="profile-pic">
+            <h1>Yuhan Zhu</h1>
+            <p>"For to me to live is Christ, and to die is gain." - Philippians 1:21</p>
+        </section>
+        <section id="bio" class="hidden">
+            <h2>Bio</h2>
+            <p>Data Scientist, B.S. Physics at Michigan State University.</p>
+            <p>Master of Science Program in Data Science, Michigan State University (09/2022 – 05/2024)</p>
+            <p>Bachelor of Science in Physics, Michigan State University (09/2018 – 05/2022)</p>
             <ul>
-                <li>Master of Science Program in Data Science</li>
-                <li>Big Data Analysis, Data Mining, Statistical Modeling for Data Science, Computational Optimization, Applied Machine Learning, Bioinformatics: “Data Handling: Unix and Python.”, “Intro to Genomics”, “Transcriptomic Data Analysis”, Generative AI, Deep Learning, Large Language Model.</li>
-            </ul>
-            <p><strong>Michigan State University, East Lansing, MI, U.S</strong> (09/2018 – 05/2022)</p>
-            <ul>
-                <li>Bachelor of Science in Physics</li>
-                <li>Minor in Computational Mathematics Science and Engineering</li>
-                <li>Key Courses: Computational Physics, Computational Modeling and Data Analysis, Introduction to Data Science, Probability and Statistics, Thermal & Statistical Physics, Intro to Nuclear Physics, Intro to Elementary Particle Physics, Electricity and Magnetism I, Electronics, Advanced Laboratory, Quantum Physics I.</li>
+                <li>Big Data Analysis</li>
+                <li>Data Mining</li>
+                <li>Statistical Modeling for Data Science</li>
+                <li>Computational Optimization</li>
+                <li>Applied Machine Learning</li>
+                <li>Bioinformatics</li>
+                <li>Generative AI</li>
+                <li>Deep Learning</li>
+                <li>Large Language Model</li>
             </ul>
         </section>
-        <section id="work-experience">
-            <h2>Work Experience</h2>
-            <p><strong>Student Research Assistant</strong> (01/2023 – 05/2024)</p>
-            <p>Michigan State University, Department of Finance</p>
-            <ul>
-                <li>Conducted financial data analysis, contributed to the construction of financial databases, and extracted data from XML sources.</li>
-                <li>Applied analytical techniques to optimize data integrity and accuracy.</li>
-            </ul>
-        </section>
-        <section id="projects">
-            <h2>Projects & Experiments</h2>
+        <section id="projects" class="hidden">
+            <h2>Projects</h2>
             <p><strong>Modeling Global Sea Level Change</strong> (Winter 2019)</p>
             <p>Utilized Python for data visualization and predictive modeling of sea level changes correlating with carbon dioxide levels. Techniques include time-series analysis and curve fitting to forecast future trends.</p>
             <p><strong>Modeling the Solar System</strong> (Spring 2020)</p>
             <p>Implemented Euler, Euler-Cromer, and Verlet algorithms in MATLAB to simulate the orbital mechanics of Earth, Mars, and Jupiter in a 2D space, enhancing understanding of dynamic systems.</p>
+            <p><strong>Recommendation System</strong> (Spring 2023)</p>
+            <p>Designed and implemented a recommendation engine using machine learning algorithms (Sklearn, cluster analysis) to personalize user experiences based on big data insights.</p>
+            <!-- Add more projects as needed -->
+        </section>
+        <section id="experiments" class="hidden">
+            <h2>Experiments</h2>
             <p><strong>Superconductivity and Tunneling</strong> (Spring 2021)</p>
             <p>Explored applications in quantum computing and electric power, emphasizing technological implications and potential innovations.</p>
             <p><strong>Gamma Ray Spectroscopy</strong> (Spring 2021)</p>
             <p>Developed a detection system using Nal crystals and photomultipliers to analyze gamma-ray spectra, enhancing knowledge in nuclear physics phenomena such as the Compton effect.</p>
             <p><strong>Visualize the Solar System with Animation</strong> (Spring 2022)</p>
             <p>Mastered Python animation tools (Seaborn, Altair) to create dynamic visualizations of the solar system, improving data presentation and engagement.</p>
-            <p><strong>Study Investment under Inflation</strong> (Fall 2022)</p>
-            <p>Analyzed time-series data, optimized investment strategies under inflationary pressures, and developed a web-based application for real-time financial analytics.</p>
-            <p><strong>Recommendation System</strong> (Spring 2023)</p>
-            <p>Designed and implemented a recommendation engine using machine learning algorithms (Sklearn, cluster analysis) to personalize user experiences based on big data insights.</p>
-            <p><strong>Optimizer Selection for CNN in MNIST Dataset</strong> (Spring 2023)</p>
-            <p>Optimized convolutional neural networks using various algorithms (SGD, Momentum, RMSprop, Adam) to enhance computational efficiency without compromising accuracy.</p>
-            <p><strong>Optimizing for Brownfield Solar Redevelopment</strong> (Fall 2023)</p>
-            <p>Developed an interactive tool for site selection in solar projects, integrating spatial data and filters to identify optimal redevelopment locations.</p>
+            <!-- Add more experiments as needed -->
         </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: Python, R, MATLAB, C++, SQL</li>
-                <li>Software and Tools: IBM SPSS, SAS, Docker, AWS, Linux, HPCC</li>
-                <li>Data Science Skills: Data Visualization, Statistical Modeling, Machine Learning, LLM, AI</li>
-                <li>Additional Skills: Multilingual, Photography, Hard-working</li>
-            </ul>
+        <section id="photos" class="hidden">
+            <h2>Photos</h2>
+            <img src="images/IMG_1950.JPG" alt="Photo 1" class="photo">
+            <img src="images/dog.jpg" alt="Photo 2" class="photo">
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:zhuyuha3@msu.edu">zhuyuha3@msu.edu</a></p>
+            <p>Phone: 517-802-0375</p>
+            <p>GitHub: <a href="https://github.com/YuhanZhu1" target="_blank">YuhanZhu1</a></p>
+            <p>Facebook: <a href="https://www.facebook.com/yourprofile" target="_blank">Your Facebook Profile</a></p>
+            <p>TikTok: <a href="https://www.tiktok.com/@yourprofile" target="_blank">Your TikTok Profile</a></p>
+            <p>X (formerly Twitter): <a href="https://twitter.com/yourprofile" target="_blank">Your Twitter Profile</a></p>
         </section>
     </main>
     <footer>
         <p>Contact: zhuyuha3@msu.edu</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
